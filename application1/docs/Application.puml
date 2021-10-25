@@ -1,0 +1,26 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+
+class Application {
++main(args: String)
+-in main:
+call launch
+
+-in start:
+define parent root
+give scene a title
+set stage
+display scene
+load styles
++start(stage: Stage)
+}
+
+class MainAppController {
++initialize(url: URL, rb: ResourceBundle)
+-in initialize:
+declare java version and javafx version
+set label object
+}
+
+@enduml
